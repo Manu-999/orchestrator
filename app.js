@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Go to /remedy/recommendation');
+  });
+
 app.get('/remedy/recommendation', (req, res) => {
   res.send('Here will be the ticket group recommendation.');
 });
